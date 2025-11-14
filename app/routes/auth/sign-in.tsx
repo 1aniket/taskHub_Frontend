@@ -88,20 +88,23 @@ const SignIn = () => {
                         className="border-3"
                       />
                     </FormControl>
+                    <>
+                      <Link to={"../forgot"} className="mt-0 flex font-bold text-sm text-blue-600 text-grey-100 justify-end text-center">Forgot Password ?</Link>
+                    </>
                     <FormMessage />
                   </FormItem>
                   
                 )}
                 
               />
-              <Link to={"../forgot"} className="mt-0 flex font-bold text-sm text-black text-grey-100 justify-end text-center">Forgot Password ?</Link>
+              
               <Button className="bg-blue-600 px-3 py-6">Submit</Button>
             </form>
           </Form>
         </CardContent>
-        <CardFooter className="flex justify-center mt-5 item-center">
+        <CardFooter className="flex justify-center mt-5 item-center text-gray-600">
           Don't have an account ?&nbsp;
-          <Link to="../signup" className="font-bold underline">Create Account</Link>
+          <Link to="../signup" className="font-bold text-blue-600">Create Account</Link>
         </CardFooter>
       </Card>
     </div>
